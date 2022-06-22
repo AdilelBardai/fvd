@@ -1,22 +1,124 @@
-<!doctype html>
-<html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
-	
-	<link href="styles/style2.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viswinkel</title>
+        <meta name="description" content="This is the description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../opdracht2/styles/style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Viswinkel</h1>
+        </header>
+        <section class="wrapper">
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+        </section>
+        <section>
+            <h2>NORMALE VISSEN</h2>
+            <section class="visjes">
+                <section class="vis">
+                    <span class="vis-naam">ROODJE</span>
+                    <img class="vis-image" src="../opdracht2/images/redFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$29.99</span>
+                        <button class="voegtoe-button" type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+                <section class="vis">
+                    <span class="vis-naam">GROENIE</span>
+                    <img class="vis-image" src="../opdracht2/images/greenFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$29.99</span>
+                        <button class="voegtoe-button"type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+                <section class="vis">
+                    <span class="vis-naam">BLACKIE</span>
+                    <img class="vis-image" src="../opdracht2/images/fish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$9.99</span>
+                        <button class="voegtoe-button" type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+                <section class="vis">
+                    <span class="vis-naam">GEELIE</span>
+                    <img class="vis-image" src="../opdracht2/images/yellowFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$19.99</span>
+                        <button class="voegtoe-button" type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+            </section>
+        </section>
 
-<body>
-	<img src="images/Background.jpg" style="width: 100px; height: 100px;">
-	<h1>Opdracht 2</h1>
+        <section>
+            <h2>SPECIALE VISSEN</h2>
+            <section class="visjes">
+                <section class="vis">
+                    <span class="vis-naam">BLOEN</span>
+                    <img class="vis-image" src="../opdracht2/images/specialGreenFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$49.99</span>
+                        <button class="voegtoe-button" type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+                <section class="vis">
+                    <span class="vis-naam">ROODANJE</span>
+                    <img class="vis-image" src="../opdracht2/images/specialOrangeFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$54.99</span>
+                        <button class="voegtoe-button"type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+                <section class="vis">
+                    <span class="vis-naam">BLAURS</span>
+                    <img class="vis-image" src="../opdracht2/images/specialPurpleFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$64.99</span>
+                        <button class="voegtoe-button" type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+                <section class="vis">
+                    <span class="vis-naam">ZWOORD</span>
+                    <img class="vis-image" src="../opdracht2/images/specialRedFish.png">
+                    <section class="vis-details">
+                        <span class="vis-prijs">$54.99</span>
+                        <button class="voegtoe-button" type="button">TOEVOEGEN</button>
+                    </section>
+                </section>
+            </section>
+        </section>
 
-	<script src="scripts/script.js"></script>
-</body>
-	
+        <section class="container">
+            <h2>WINKELWAGEN</h2>
+            <section class="winkelwagen">
+                <span class="winkelwagen-item winkelwagen-header winkelwagen-column">VIS</span>
+                <span class="vis-prijs winkelwagen-header winkelwagen-column">PRIJS</span>
+                <span class="vis-aantal winkelwagen-header winkelwagen-column">AANTAL</span>
+            </section>
+            <section class="winkelwagen-items">
+            </section>
+            <section class="vis-totaal">
+                <strong class="vis-totaal-title">Totaal</strong>
+                <span class="vis-totaal-prijs">$0</span>
+            </section>
+            <button class="koop-button" type="button">KOOP</button>
+        </section>
+        <script src="../opdracht2/scripts/script.js"></script>
+    </body>
 </html>

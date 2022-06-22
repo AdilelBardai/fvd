@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** -Adil el Bardai-
 
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -27,15 +27,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="storyboard voor opdracht 1">
+  <img src="readme-images/SchetsOpdracht1.png" width="375px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Glitch effect
+  - Before en after
+  - Animatie
+  - CSS custom proterties
  
 </details>
 
@@ -48,19 +48,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/UA.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  De kleuren van de letters achter elkaar positioneren. Dit is mij gelukt, doordat
+  ik in de eerste instantie 3 verschillende text tags had gebruikt.
 
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  De glitch effect werkend krijgen, met de kleuren die heen en weer bewegen. 
+  Per animatie scene lukte het me niet om het bewegend te krijgen.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/animatie-UA.png" width="375px" alt="bummer">
 </details>
 
 
@@ -72,15 +74,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je ontwerp:
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="ontwerp opdracht 2">
+  <img src="readme-images/viswinkel.png" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Volledig responsive
+  - Geavanceerde Javascript code
+  - Animatie
 </details>
 
 
@@ -95,23 +96,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Bellen animatie op de achtergrond had geen beweging en stond niet goed gepositioneerd
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
+  Ik had het opgelost door voor elke bel een span/div te gebruiken en deze op steeds een andere
+  seconde animeren zodat er verschil in zit.
+  <img src="readme-images/belleneffect.png" width="375px" alt="ontwerp opdracht 2">
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Vis toevoegen aan winkelwagen
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
-
-  ### Bevinding 3:
-  ...
+  Heb ik in javascript een functie geschreven die de afbeelding van de vis, prijs en aantal toevoegd
+  aan je winkelwagen.
+  <img src="readme-images/winkelwagenecode.png" width="375px" alt="ontwerp opdracht 2">
 </details>
 
 
@@ -122,17 +121,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken bij afronden opdracht (voor week 8)</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/resultaat-vis.png" width="375px" alt="uitkomst opdracht 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  Het plaatsen van alle elementen op de pagina ging best goed. Ik wist alles wel op de juiste plek
+  te krijgen met flexbox dus dat ging top.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  Wat niet was gelukt is een zoekbalk die ervoor zorgt dat je specifiek op een visnaam kunt zoeken.
+  Na een paar keer proberen gaf ik de hoop op
 </details>
