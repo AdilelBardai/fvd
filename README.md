@@ -14,9 +14,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. -bron 1- vis foto https://thenounproject.com/search/icons/?iconspage=1&q=fish
 
 
 
