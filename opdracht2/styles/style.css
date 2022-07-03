@@ -30,11 +30,60 @@ header h1 {
     font-family: monospace;
 }
 
+.split-screen {
+  display: flex;
+}
+
 .container {
-    /* max-width: 900px; */
+    /* max-width: 900px; */ 
     margin: 0 auto;
     padding: 0 1.5em;
-}
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #cart {
+    position:fixed;
+    right:1em;
+    top:1em;
+    z-index:200;
+    font:inherit;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  #cart span {
+    position:absolute;
+    width:1em;
+    /* aspect-ratio:1; */
+    background-color: rebeccapurple;
+    color: white;
+    border-radius:50%;
+    right:-.2em;
+    top:-.75em;
+  }
+
+  #cart, span {
+    display: none;
+  }
+
+  #close {
+    display: none;
+    position: absolute;
+    top: -2em;
+    right: 1em;
+    color: white;
+    background: black;
+    padding: 0.2em;
+    border-radius: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: steelblue;
+  }
 
 h2 {
     /* font-family: "Metal Mania"; */
@@ -64,7 +113,7 @@ button {
 }
 
 .vis {
-    margin: 30px;
+    margin: 1.875em;
     transition: transform .2s;
 }
 
@@ -75,11 +124,11 @@ button {
     font-weight: bold;
     font-size: 1.5em;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 0.938em;
 }
 
 .vis-image {
-    height: 250px;
+    height: 15.625em;
 }
 
 .vis:hover{
@@ -89,7 +138,7 @@ button {
 .vis-details {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 0.313em;
 }
 
 .vis-prijs {
@@ -114,10 +163,10 @@ button {
 .winkelwagen-column {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 0.06em solid white;
     margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    padding-bottom: 0.6em;
+    margin-top: 0.6em;
 }
 
 .winkelwagen {
@@ -147,9 +196,9 @@ button {
 }
 
 .winkelwagen-item-image {
-    width: 75px;
+    width: 5em;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.6em;
 }
 
 .verwijder-button {
@@ -165,16 +214,16 @@ button {
 }
 
 .vis-aantal-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid #56CCF2;
+    height: 2.125em;
+    width: 3em;
+    border-radius: 0.3em;
+    border: 0.06em solid #56CCF2;
     background-color: #eee;
     color: #333;
     padding: 0;
     text-align: center;
     font-size: 1.2em;
-    margin-right: 25px;
+    margin-right: 1.6em;
 }
 
 .winkelwagen:last-child .cart-column {
@@ -183,26 +232,27 @@ button {
 
 .vis-totaal {
     text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 0.6em;
+    margin-right: 0.6em;
 }
 
 .vis-totaal-title {
     font-weight: bold;
     font-size: 1.5em;
     color: black;
-    margin-right: 20px;
+    margin-right: 1.3em;
 }
 
 .vis-totaal-prijs {
     color: white;
     font-size: 1.1em;
+    display: contents;
 }
 
 .koop-button {
     display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+    margin: 3em auto 5em auto;
+    font-size: 1em;
     color: white;
     background-color: #56CCF2;
     border: none;
@@ -211,10 +261,10 @@ button {
 }
 
 .wrapper div {
-    height: 60px;
-    width: 60px;
-    border: 2px solid white;
-    border-radius: 50px;
+    height: 3.75em;
+    width: 3.75em;
+    border: 0.13em solid white;
+    border-radius: 3em;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -222,9 +272,9 @@ button {
   }
   
   .wrapper div span {
-    height: 10px;
-    width: 10px;
-    border-radius: 50px;
+    height: 0.6em;
+    width: 0.6em;
+    border-radius: 3em;
     background: rgba(255, 255, 255,0.5);
     position: absolute;
     top: 20%;
@@ -332,29 +382,69 @@ button {
   }
 
     @media only screen and (max-width: 1024px) {
-        .vis-image {
-            height: 195px;
-        }
+      .vis-image {
+          height: 12.188em;
+      }
+
+      .vis-totaal-prijs {
+        display: contents;
+      }
     }
 
     @media only screen and (max-width: 768px) {
-        .vis-image {
-            height: 180px;
-        }
+      #close {
+        display: block;
+      }
+      
+      .container {
+        /* display: block; */
+        height: 100em;
+        position: absolute;
+        width: 100%;
+        background: steelblue;
+      }
+      
+      .split-screen {
+        display: block;
+      }
 
-        .vis {
-          margin: 0;
-        }
+      .vis-totaal-prijs {
+        display: contents;
+      }
 
-        .visjes {
-          flex-wrap: nowrap;
-          overflow: auto;
-        }
+      .vis-image {
+          height: 11.25em;
+      }
+
+      .vis {
+        margin: 0;
+      }
+
+      .visjes {
+        flex-wrap: nowrap;
+        overflow: auto;
+      }
+
+      #cart, span {
+        display: block;
+      }
+
+      .container {
+        display: none;
+      }
     }
 
     @media only screen and (max-width: 425px) {
+        .container {
+          /* display: block; */
+          height: 100em;
+          position: absolute;
+          width: 100%;
+          background: steelblue;
+        }
+
         .vis-image {
-            height: 180px;
+            height: 11.25em;
         }
 
         header h1 {
@@ -404,7 +494,7 @@ button {
       }
 
       .vis-image {
-        height: 200px;
+        height: 12.5em;
       }
 
       .visjes {
@@ -412,7 +502,7 @@ button {
         overflow: auto;
         white-space: nowrap;
         flex-wrap: nowrap;
-        padding: 10px 0px 10px 10px;
+        padding: 0.6em 0 0.6em 0.6em;
       }
 
       .vis:hover{
@@ -436,5 +526,9 @@ button {
     @media (min-width: 320px) {
       .verwijder-button {
         font-size: 0.8em;
+      }
+
+      header h1 {
+        text-align: left;
       }
     }

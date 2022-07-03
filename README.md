@@ -14,7 +14,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1- vis foto https://thenounproject.com/search/icons/?iconspage=1&q=fish
+  1. Mixkit: voor de sound effect - https://mixkit.co/free-sound-effects/bubbles/
+  2. YouTube: voor de shopping cart - https://www.youtube.com/watch?v=YeFzkC2awTM&t=983s
+  3. Thenounproject: voor de visjes in png - https://thenounproject.com/search/icons/?iconspage=1&q=fish
 
 
 
